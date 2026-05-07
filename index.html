@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bravo Housewives Fan Rankings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Real Housewives Fan Rankings</h1>
+      <p>Prototype: vote after each episode and rank each cast member out of 10.</p>
+    </header>
+
+    <main>
+      <nav id="city-tabs" class="tabs" aria-label="City tabs"></nav>
+      <section>
+        <h2 id="city-title"></h2>
+        <p class="subtext">Y-axis: fan score out of 10. X-axis: cast members. Bars update as votes come in.</p>
+      </section>
+
+      <section id="chart" class="chart" aria-label="Housewives ranking chart"></section>
+
+      <section class="vote-panel">
+        <h3>Cast Voting</h3>
+        <p>Submit one vote per cast member (1-10) to simulate fan voting.</p>
+        <form id="vote-form"></form>
+      </section>
+    </main>
+
+    <footer>
+      <small>For internal prototype use only. Add auth + anti-fraud controls before public launch.</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
